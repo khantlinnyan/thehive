@@ -32,10 +32,12 @@ const Navbar = () => {
   const { scrollY } = useScroll();
   useMotionValueEvent(scrollY, "change", (latest) => {
     const prev = scrollY.getPrevious();
-    if (latest > prev && latest > 150) {
-      setHidden(true);
-    } else {
-      setHidden(false);
+    if (prev) {
+      if (latest > prev && latest > 150) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
     }
   });
   console.log(hidden);

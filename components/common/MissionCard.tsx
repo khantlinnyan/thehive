@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import HeadingText from "./HeadingText";
 
 type Props = {
-  icon?: () => ReactNode;
+  icon?: any;
   title?: string;
   description?: string;
   bgColor?: string;
