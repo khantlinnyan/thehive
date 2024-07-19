@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../Layout/Layout";
 import HeadingText from "../common/HeadingText";
+import { cn } from "@/lib/utils";
 
 type Props = {};
 
@@ -17,8 +18,6 @@ const Achieved = (props: Props) => {
 };
 
 export default Achieved;
-
-import { cn } from "@/lib/utils";
 // import {
 //   IconAdjustmentsBolt,
 //   IconCloud,

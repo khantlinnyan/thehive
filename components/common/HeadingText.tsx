@@ -3,7 +3,7 @@ import React from "react";
 
 type Props = {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 };
 
 const HeadingText = ({ children, className }: Props) => {
