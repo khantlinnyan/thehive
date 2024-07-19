@@ -40,7 +40,7 @@ const EventSection = (props: Props) => {
     <Layout>
       <div className="flex justify-between ">
         <HeadingText className="mb-10defined">
-          OUR <p className="bg-primary-honey-yellow inline">EVENT</p>
+          What we <p className="bg-primary-honey-yellow inline">made</p>
         </HeadingText>
         <Link
           href={"/event"}

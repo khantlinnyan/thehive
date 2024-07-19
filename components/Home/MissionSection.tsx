@@ -71,8 +71,8 @@ const data = [
 const MissionSection = (props: Props) => {
   return (
     <Layout className=" mt-28 lg:mt-48 flex flex-col gap-10">
-      <HeadingText className="capitalize text-start lg:text-center">
-        OUR <p className="inline bg-primary-honey-yellow">MISSION</p>
+      <HeadingText className=" text-start lg:text-center">
+        What we <p className="inline bg-primary-honey-yellow">do</p>
       </HeadingText>
       <main className="grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {data.map((i, index) => (

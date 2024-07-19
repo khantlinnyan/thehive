@@ -11,7 +11,7 @@ const AboutSection = (props: Props) => {
   return (
     <Layout className="my-20 lg:my-26 flex flex-col gap-20 lg:flex-row items-start justify-between">
       <HeadingText className="">
-        OUR <p className="bg-primary-honey-yellow/80 inline">Story</p>
+        Who <p className="bg-primary-honey-yellow/80 inline">we are</p>
       </HeadingText>
       <div className="lg:w-2/3 w-full">
         <Text className="lg:mb-10 mb-6 font-inter lg:text-3xl text-xl">
