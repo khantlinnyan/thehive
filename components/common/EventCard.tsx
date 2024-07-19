@@ -4,7 +4,7 @@ import { FollowerPointerCard } from "../ui/following-pointer";
 import { ArrowArcRight, ArrowRight } from "@phosphor-icons/react";
 import logo from "@/public/logo.png";
 
-export function EventCard({ data }) {
+export function EventCard({ data }: any) {
   const { name, platform, date, time, description } = data;
   return (
     <div className="h-fit w-full mx-auto">
