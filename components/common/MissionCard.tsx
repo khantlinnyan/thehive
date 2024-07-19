@@ -2,10 +2,10 @@ import React, { ReactNode } from "react";
 import HeadingText from "./HeadingText";
 
 type Props = {
-  icon: () => ReactNode;
-  title: string;
-  description: string;
-  bgColor: string;
+  icon?: () => ReactNode;
+  title?: string;
+  description?: string;
+  bgColor?: string;
 };
 
 const MissionCard = ({ icon, title, description, bgColor }: Props) => {

@@ -81,7 +81,6 @@ const MissionSection = (props: Props) => {
             icon={i.icon}
             title={i.title}
             description={i.description}
-            bgColor={i.bgColor}
           />
         ))}
       </main>
