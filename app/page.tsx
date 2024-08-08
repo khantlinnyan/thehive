@@ -6,6 +6,7 @@ import EventSection from "@/components/Home/EventSection";
 import { Testmonials } from "@/components/Home/Testminoals";
 import Achieved from "@/components/Home/Achieved";
 import { EventCard } from "@/components/common/EventCard";
+import { ClassSection } from "@/components/Home/ClassSection";
 
 const P = ({ text }: { text: string }) => (
   <p className="text-4xl ml-10 text-primary-bee-black font-monos leading-snug tracking-tight font-medium w-5/6 mb-12">
@@ -15,15 +16,16 @@ const P = ({ text }: { text: string }) => (
 
 export default function Home() {
   return (
-    <>
+    <main>
       <HeroSection />
+      <ClassSection />
       <Achieved />
       <AboutSection />
       <MissionSection />
       <VisionSectaion />
       <EventSection />
       <Testmonials />
-    </>
+    </main>
   );
 }
 

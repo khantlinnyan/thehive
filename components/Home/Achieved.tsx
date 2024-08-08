@@ -11,7 +11,6 @@ const Achieved = (props: Props) => {
       <HeadingText>
         What we <p className="bg-primary-honey-yellow/80 inline">achieved?</p>
       </HeadingText>
-
       <FeaturesSectionDemo />
     </Layout>
   );
@@ -51,7 +50,7 @@ export function FeaturesSectionDemo() {
     },
   ];
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 py-10 mx-auto w-full">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative py-3 lg:py-10 mx-auto w-full">
       {features.map((feature, index) => (
         <Feature key={feature.title} {...feature} index={index} />
       ))}

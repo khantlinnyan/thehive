@@ -21,8 +21,7 @@ export function EventCard({ data }: any) {
             <Image
               src={logo}
               alt="thumbnail"
-              // layout="fill"
-              objectFit="cover"
+              // objectFit="cover"
               width={100}
               height={100}
               className={`group-hover:scale-95 group-hover:rounded-2xl transform object-cover transition duration-200 `}
@@ -57,7 +56,7 @@ const blogContent = {
   authorAvatar: "/manu.png",
 };
 
-const TitleComponent = ({
+export const TitleComponent = ({
   title,
   avatar,
 }: {
