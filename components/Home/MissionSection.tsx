@@ -68,13 +68,14 @@ const data = [
   //   icon: () => <Palette size={36} className="w-5/6 lg:w-full mx-auto" />,
   // },
 ];
+// grid grid-cols-1 p-10 md:grid-cols-2 lg:grid-cols-3 gap-8
 const MissionSection = (props: Props) => {
   return (
     <Layout className=" mt-28 lg:mt-48 flex flex-col gap-10">
       <HeadingText className=" text-start lg:text-center">
         What we <p className="inline bg-primary-honey-yellow">do</p>
       </HeadingText>
-      <main className="grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <main className="flex justify-center justify-items-start items-start flex-wrap gap-10">
         {data.map((i, index) => (
           <MissionCard
             key={index}

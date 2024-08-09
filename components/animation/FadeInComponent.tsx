@@ -8,12 +8,12 @@ type Props = {
   className?: string;
 };
 
-const HeadingText = ({ children, className }: Props) => {
+const FadeInComponent = ({ children, className }: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
   return (
-    <motion.h1
+    <motion.div
       ref={ref}
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -27,8 +27,8 @@ const HeadingText = ({ children, className }: Props) => {
       )}
     >
       {children}
-    </motion.h1>
+    </motion.div>
   );
 };
 
-export default HeadingText;
+export default FadeInComponent;

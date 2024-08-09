@@ -5,7 +5,7 @@ import { CardStack } from "../ui/card-stack";
 import { cn } from "@/lib/utils";
 export function Testmonials() {
   return (
-    <Layout className=" flex flex-col gap-10 my-16 md:my-28  md:items-center items-start  w-full">
+    <Layout className=" flex flex-col gap-10 pt-16 md:pt-28  md:items-center items-start  w-full">
       <HeadingText>Testimonials</HeadingText>
       <CardStack items={CARDS} />
     </Layout>

@@ -39,17 +39,17 @@ const ClassCard = ({
           <div className="w-full h-[1.5px] bg-primary-bee-black/40" />
           <div className="flex justify-between">
             <div>
-              <h1 className="text-xl lg:text-2xl font-bold text-primary-bee-black/90">
+              <h1 className="text-xl lg:text-2xl font-bold text-primary-bee-black/95">
                 {classTitle}
               </h1>
-              <p className="text-base text-zinc-600 font-medium ">
+              <p className="text-sm text-zinc-600 font-medium ">
                 Lecturer{" "}
                 {lecturerName.map((name) => (
                   <span key={name}>{name}</span>
                 ))}
               </p>
             </div>
-            <h1 className="self-end text-base text-zinc-700 font-light">
+            <h1 className="self-end text-sm text-zinc-700 font-light">
               Batch {batch}
             </h1>
           </div>

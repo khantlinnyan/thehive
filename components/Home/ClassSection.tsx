@@ -22,6 +22,7 @@ import HeadingText from "../common/HeadingText";
 import Layout from "../Layout/Layout";
 import { Highlight } from "../ui/hero-highlight";
 import Link from "next/link";
+import FadeInComponent from "../animation/FadeInComponent";
 
 // Define variables for strokeWidth, size, and color
 const strokeWidth = 0.6;
@@ -142,42 +143,44 @@ const classes = [
 export function ClassSection() {
   return (
     <Layout>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between ">
         <HeadingText>IGCSE Free Revision Classes</HeadingText>
         <Link
           href={"/classes"}
-          className="text-zinc-700 underline font-inter text-base lg:text-lg"
+          className="text-zinc-700 text-nowrap underline font-inter text-base lg:text-lg"
         >
           Explore classes
         </Link>
       </div>
-      <Carousel
-        opts={{
-          align: "start",
-        }}
-        className="min-w-sm mt-6 mb-10 lg:mb-16 w-full relative  mx-auto"
-      >
-        <CarouselContent className="">
-          {classes.map((i) => (
-            <CarouselItem key={i.id} className="md:basis-1/2 lg:basis-1/3">
-              <div className="p-1">
-                <ClassCard
-                  classTitle={i.classTitle}
-                  lecturerName={i.lecturerName}
-                  batch={i.batch}
-                  icon={i.icon}
-                  backgroundColor={i.backgroundColor}
-                  classType={i.classType}
-                />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <div className="flex  items-end gap-3 text-right w-full py-6 md:py-8 justify-end">
-          <CarouselPrevious />
-          <CarouselNext />
-        </div>
-      </Carousel>
+      <FadeInComponent>
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          className="min-w-sm mt-6 mb-10 lg:mb-16 w-full relative  mx-auto"
+        >
+          <CarouselContent className="">
+            {classes.map((i) => (
+              <CarouselItem key={i.id} className="md:basis-1/2 lg:basis-1/3">
+                <div className="p-1">
+                  <ClassCard
+                    classTitle={i.classTitle}
+                    lecturerName={i.lecturerName}
+                    batch={i.batch}
+                    icon={i.icon}
+                    backgroundColor={i.backgroundColor}
+                    classType={i.classType}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex  items-end gap-3 text-right w-full py-6 md:py-8 justify-end">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
+        </Carousel>
+      </FadeInComponent>
     </Layout>
   );
 }

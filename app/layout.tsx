@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
+import { useEffect } from "react";
+import AnimatedLayout from "@/components/animation/AnimatedLayout";
+import Footer from "@/components/common/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,8 +34,11 @@ export default function RootLayout({
             
       ${inter.variable}`}
       >
-        <Navbar />
-        {children}
+        <AnimatedLayout>
+          <Navbar />
+          {children}
+          <Footer />
+        </AnimatedLayout>
       </body>
     </html>
   );
