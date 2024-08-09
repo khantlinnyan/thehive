@@ -7,9 +7,12 @@ import { cn } from "@/lib/utils";
 
 type Props = {
   phrases: string[];
-  className: string;
+  className?: string;
 };
-
+type TextProps = {
+  children: React.ReactNode;
+  className?: string;
+};
 function FadeIn1({ phrases, className }: Props) {
   return (
     <div className="relative text-primary-bee-black">
@@ -22,7 +25,7 @@ function FadeIn1({ phrases, className }: Props) {
   );
 }
 
-function AnimatedText({ children, className }) {
+function AnimatedText({ children, className }: TextProps) {
   const controls = useAnimation();
   const ref = useRef(null);
   const inView = useInView(ref);

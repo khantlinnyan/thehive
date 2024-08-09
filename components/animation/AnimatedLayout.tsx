@@ -8,6 +8,7 @@ type Props = {
 const AnimatedLayout = ({ children }: Props) => {
   useEffect(() => {
     (async () => {
+      // @ts-ignore
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
 
       const locomotiveScroll = new LocomotiveScroll();
