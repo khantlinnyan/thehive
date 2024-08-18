@@ -114,7 +114,7 @@ const classes = [
   {
     id: 10,
     classTitle: "Further Pure Mathematics",
-    lecturerName: ["Nan Moe Set Aye"],
+    lecturerName: ["Nan Moe Set Aye", " & Eaint Shwe Yee"],
     batch: 1,
     classType: "",
     icon: <ChartSpline strokeWidth={strokeWidth} size={size} color={color} />,
@@ -123,7 +123,7 @@ const classes = [
   {
     id: 11,
     classTitle: "Physics",
-    lecturerName: ["Thae Nandar Su", " & Eaint Shwe Yee"],
+    lecturerName: ["Thae Nandar Su"],
     batch: 1,
     classType: "",
     icon: <Orbit size={size} color={color} strokeWidth={strokeWidth} />, // Adjust size as needed
@@ -144,10 +144,12 @@ export function ClassSection() {
   return (
     <Layout>
       <div className="flex justify-between ">
-        <HeadingText>IGCSE Free Revision Classes</HeadingText>
+        <HeadingText className="text-xl">
+          IGCSE Free Revision Classes
+        </HeadingText>
         <Link
           href={"/classes"}
-          className="text-zinc-700 text-nowrap underline font-inter text-base lg:text-lg"
+          className="text-zinc-700 text-nowrap underline font-inter text-smE lg:text-lg"
         >
           Explore classes
         </Link>
@@ -164,6 +166,7 @@ export function ClassSection() {
               <CarouselItem key={i.id} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1">
                   <ClassCard
+                    id={i.id}
                     classTitle={i.classTitle}
                     lecturerName={i.lecturerName}
                     batch={i.batch}

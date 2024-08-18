@@ -39,7 +39,7 @@ export function FeaturesSectionDemo() {
     {
       title: "2+ WEBINAR",
       description:
-        "Over the past year, The Hive has successfully conducted over 3 webinars, each designed to inspire, educate, and empower our community.",
+        "Over the past year, The Hive has successfully conducted over 2 webinars, each designed to inspire, educate, and empower our community.",
       //   icon: <IconEaseInOut />,
     },
     {

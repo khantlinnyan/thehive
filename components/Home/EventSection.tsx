@@ -7,31 +7,22 @@ import Link from "next/link";
 type Props = {};
 const events = [
   {
-    name: "Frontend Development Workshop",
-    date: "Wednesday, 10 July",
-    time: "10:00 AM",
-    status: "upcoming",
-    platform: "Zoom",
-    description:
-      "Grids are cool, but Tailwindcss grids are cooler. In this article, we will learn how to create amazing Grid layouts with Tailwindcs grid and React.",
-  },
-  {
-    name: "Backend Development Webinar",
-    date: "Saturday, 13 July",
-    time: "2:00 PM",
-    status: "upcoming",
-    platform: "Microsoft Teams",
-    description:
-      "Grids are cool, but Tailwindcss grids are cooler. In this article, we will learn how to create amazing Grid layouts with Tailwindcs grid and React.",
-  },
-  {
-    name: "Project Demo",
-    date: "Thursday, 10 July",
-    time: "11:00 AM",
+    name: "All About English as a first language or English Language B for IGCSE students",
+    date: "September 24, 2023",
     status: "done",
-    platform: "Google Meet",
-    description:
-      "Grids are cool, but Tailwindcss grids are cooler. In this article, we will learn how to create amazing Grid layouts with Tailwindcs grid and React.",
+    platform: "Zoom",
+  },
+  {
+    name: "SAT Success “Scoring a 1600”",
+    date: "30th April, 2024",
+    status: "done",
+    platform: "Zoom",
+  },
+  {
+    name: "English Language B One on One Counselling Sessions",
+    date: "2024 - Present",
+    status: "on going",
+    platform: "Zoom",
   },
 ];
 
@@ -43,13 +34,13 @@ const EventSection = (props: Props) => {
           What we <p className="bg-primary-honey-yellow inline">made</p>
         </HeadingText>
         <Link
-          href={"/event"}
-          className="text-base lg:text-lg hover:underline transition duration-500"
+          href={"/events"}
+          className="text-sm font-inter underline lg:text-lg hover:underline transition duration-500"
         >
           Expore events
         </Link>
       </div>
-      <section className="grid grid-cols-1 mt-16 h-fit lg:grid-cols-3 gap-10">
+      <section className="grid grid-cols-1 mt-16 h-full lg:grid-cols-3 gap-10">
         {events?.map((data) => (
           <EventCard key={data.name} data={data} />
         ))}

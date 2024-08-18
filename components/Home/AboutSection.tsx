@@ -20,8 +20,8 @@ const descriptionPhrases1 = [
 ];
 
 const descriptionPhrases2 = [
-  "We provide a safe place for expression, valuable educational resources,",
-  "webinar programs, and opportunities for youths to showcase their talents.",
+  "We provide a safe place for expression, valuable educational resources, webinar programs, and opportunities",
+  "for youths to showcase their talents.",
 ];
 
 const AboutSection = (props: Props) => {
@@ -32,6 +32,8 @@ const AboutSection = (props: Props) => {
       </HeadingText>
       <div className="lg:w-2/3 w-full">
         <FadeIn1 phrases={descriptionPhrases1} />
+
+        <br />
         <FadeIn1 phrases={descriptionPhrases2} />
 
         {/* <Text className="lg:mb-10 mb-6 font-inter lg:text-3xl text-xl">

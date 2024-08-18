@@ -22,7 +22,7 @@ const HeadingText = ({ children, className }: Props) => {
         ease: [0.6, -0.05, 0.01, 0.99],
       }}
       className={cn(
-        "font-semibold text-primary-bee-black font-monos text-2xl lg:text-3xl leading-tighter",
+        "font-semibold text-primary-bee-black font-monos text-2xl lg:text-4xl leading-tighter",
         className
       )}
     >

@@ -21,10 +21,7 @@ const FadeInComponent = ({ children, className }: Props) => {
         duration: 1,
         ease: [0.6, -0.05, 0.01, 0.99],
       }}
-      className={cn(
-        "font-semibold text-primary-bee-black font-monos text-2xl lg:text-3xl leading-tighter",
-        className
-      )}
+      className={cn("", className)}
     >
       {children}
     </motion.div>

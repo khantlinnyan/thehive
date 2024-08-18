@@ -17,7 +17,10 @@ const phrase = [
 ];
 const HeroSection = (props: Props) => {
   return (
-    <main className="inset-0 z-20 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]">
+    <main
+      className="inset-0 z-20 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"
+      id="home"
+    >
       <section
         className=" transform  bg-[radial-gradient(100%_50%_at_50%_0%,rgba(255,179,0,0.3)_0%,rgba(255,179,0,0)_50%,rgba(255,179,0,0)_100%)]
  overflow-x-hidden"

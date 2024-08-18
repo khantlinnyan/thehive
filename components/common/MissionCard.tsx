@@ -17,7 +17,7 @@ const MissionCard = ({ icon, title, description, bgColor }: Props) => {
           {icon()}
         </div>
         <div>
-          <HeadingText className="text-xl text-primary-bee-black font-bold ">
+          <HeadingText className="text-xl lg:text-2xl text-primary-bee-black font-bold ">
             {title}
           </HeadingText>
           <p className="w-5/6 font-inter mt-3 text-zinc-700 text-base">
