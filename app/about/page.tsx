@@ -1,4 +1,3 @@
-import MemberSection from "@/components/About/MemberSection";
 import FadeInComponent from "@/components/animation/FadeInComponent";
 import HeadingText from "@/components/common/HeadingText";
 import Text from "@/components/common/Text";
@@ -22,7 +21,7 @@ const people = [
   { name: "Daw Daw", position: "Business Analyst" },
 ];
 
-const words = ["The Hive", "worker bees", "youth", "kyay kwl luu ngal"];
+const words = ["The Hive", "worker bees", "youth"];
 const page = (props: Props) => {
   return (
     <main className="">
