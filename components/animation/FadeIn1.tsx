@@ -51,18 +51,31 @@ function AnimatedText({ children, className }: TextProps) {
   };
 
   return (
-    <motion.p
-      ref={ref}
-      initial="hidden"
-      animate={controls}
-      variants={variants}
-      className={cn(
-        "relative overflow-hidden font-inter lg:text-3xl text-xl  font-medium leading-normal lg:leading-snug tracking-tight text-zinc-600  m-0",
-        className
+    <>
+      {inView ? (
+        <motion.p
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={variants}
+          className={cn(
+            "relative overflow-hidden font-inter lg:text-3xl text-xl  font-medium leading-normal lg:leading-snug tracking-tight text-zinc-600  m-0",
+            className
+          )}
+        >
+          {children}
+        </motion.p>
+      ) : (
+        <p
+          className={cn(
+            "relative overflow-hidden font-inter lg:text-3xl text-xl  font-medium leading-normal lg:leading-snug tracking-tight text-zinc-600  m-0",
+            className
+          )}
+        >
+          {children}
+        </p>
       )}
-    >
-      {children}
-    </motion.p>
+    </>
   );
 }
 

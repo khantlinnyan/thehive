@@ -15,6 +15,7 @@ import Layout from "@/components/Layout/Layout";
 import Link from "next/link";
 import FadeInComponent from "@/components/animation/FadeInComponent";
 import ClassCard from "@/components/common/ClassCard";
+import { Metadata } from "next";
 
 type Props = {};
 // Define variables for strokeWidth, size, and color
@@ -22,6 +23,11 @@ const strokeWidth = 0.6;
 const size = 140;
 const color = "#444444";
 
+export const metadata: Metadata = {
+  title: "Classes",
+  description:
+    "The Hive is a youth-driven non-profit organization in Myanmar dedicated to empowering individuals through education and personal growth. We provide a safe and inclusive community where young people can connect, inspire each other, and showcase their talents. Our mission focuses on offering valuable educational resources, promoting personal development, and creating opportunities for youth to thrive. Join us in building a supportive environment that fosters dreams, connections, and growth.",
+};
 const classes = [
   {
     id: 1,

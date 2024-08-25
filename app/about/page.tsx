@@ -4,6 +4,7 @@ import Text from "@/components/common/Text";
 import Layout from "@/components/Layout/Layout";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { FlipWords } from "@/components/ui/flip-words";
+import { Metadata } from "next";
 import React from "react";
 
 type Props = {};
@@ -20,6 +21,12 @@ const people = [
   { name: "U U", position: "Scrum Master" },
   { name: "Daw Daw", position: "Business Analyst" },
 ];
+
+export const metadata: Metadata = {
+  title: "About-us",
+  description:
+    "The Hive is a youth-driven non-profit organization in Myanmar dedicated to empowering individuals through education and personal growth. We provide a safe and inclusive community where young people can connect, inspire each other, and showcase their talents. Our mission focuses on offering valuable educational resources, promoting personal development, and creating opportunities for youth to thrive. Join us in building a supportive environment that fosters dreams, connections, and growth.",
+};
 
 const words = ["The Hive", "worker bees", "youth"];
 const page = (props: Props) => {
