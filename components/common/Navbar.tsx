@@ -184,7 +184,7 @@ const Navbar = () => {
               className="px-5 lg:self-end flex lg:flex-col gap-4"
               variants={liVariant}
             >
-              <Link href="/">
+              <Link href="https://www.facebook.com/profile.php?id=61550785031884&mibextid=ZbWKwL">
                 <FaFacebook
                   color={"rgb(82 82 91)"}
                   className="text-3xl lg:text-4xl"
