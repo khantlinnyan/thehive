@@ -3,29 +3,9 @@ import { EventCard } from "@/components/common/EventCard";
 import HeadingText from "@/components/common/HeadingText";
 import Layout from "@/components/Layout/Layout";
 import React from "react";
+import { events } from "@/components/Home/EventSection";
 
 type Props = {};
-
-const events = [
-  {
-    name: "All About English as a first language or English Language B for IGCSE students",
-    date: "September 24, 2023",
-    status: "done",
-    platform: "Zoom",
-  },
-  {
-    name: "SAT Success “Scoring a 1600”",
-    date: "30th April, 2024",
-    status: "done",
-    platform: "Zoom",
-  },
-  {
-    name: "English Language B One on One Counselling Sessions",
-    date: "2024 - Present",
-    status: "on going",
-    platform: "Zoom",
-  },
-];
 
 const page = (props: Props) => {
   return (

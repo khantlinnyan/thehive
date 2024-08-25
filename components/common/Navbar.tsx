@@ -185,16 +185,25 @@ const Navbar = () => {
               variants={liVariant}
             >
               <Link href="/">
-                <FaFacebook color={"rgb(82 82 91)"} size={28} />
+                <FaFacebook
+                  color={"rgb(82 82 91)"}
+                  className="text-3xl lg:text-4xl"
+                />
               </Link>
-              <Link href="/">
+              {/* <Link href="/">
                 <FaInstagram color={"rgb(82 82 91)"} size={28} />
+              </Link> */}
+              <Link href="https://discord.gg/7H7VBWY6vf">
+                <FaDiscord
+                  color={"rgb(82 82 91)"}
+                  className="text-3xl lg:text-4xl"
+                />
               </Link>
-              <Link href="/">
-                <FaDiscord color={"rgb(82 82 91)"} size={28} />
-              </Link>
-              <Link href="/">
-                <FaTelegram color={"rgb(82 82 91)"} size={28} />
+              <Link href="https://t.me/+pnU0fIZ6MV5iODE9">
+                <FaTelegram
+                  color={"rgb(82 82 91)"}
+                  className="text-3xl lg:text-4xl"
+                />
               </Link>
             </motion.ul>
             <motion.ul variants={ulVariant} className="list-none px-6 w-full ">

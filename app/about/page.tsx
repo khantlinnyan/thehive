@@ -42,7 +42,7 @@ const page = (props: Props) => {
             <span className="text-primary-honey-yellow">work</span>
           </HeadingText>
           <FadeInComponent className="w-full lg:w-9/12">
-            <Text className="text-lg">
+            <Text className="text-base">
               WorkerBees drive The Hive&apos;s mission by taking on various
               roles and working collaboratively. They organize events, manage
               programs, and engage with the community, all while leveraging

@@ -23,7 +23,7 @@ const ClassCard = ({
   id,
 }: Props) => {
   return (
-    <Link href={`/classes/${id}`}>
+    <>
       <Card>
         <CardContent
           className="flex aspect-[11/12] cursor-pointer flex-col items-center justify-between rounded p-6 font-monos"
@@ -60,7 +60,7 @@ const ClassCard = ({
           </div>
         </CardContent>
       </Card>
-    </Link>
+    </>
   );
 };
 
