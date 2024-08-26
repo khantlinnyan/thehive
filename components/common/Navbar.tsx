@@ -6,28 +6,34 @@ import Image from "next/image";
 import { FaFacebook, FaInstagram, FaTelegram } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const MOBILE_NAV_ITEMS = [
   {
     id: 0,
     navTitle: "home.",
+    to: "/",
   },
   {
     id: 1,
     navTitle: "about us.",
+    to: "/about",
   },
   {
     id: 2,
     navTitle: "events.",
+    to: "/events",
   },
   {
     id: 3,
-    navTitle: "blog.",
+    navTitle: "classes.",
+    to: "/classes",
   },
 ];
 
 const Navbar = () => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -137,7 +143,7 @@ const Navbar = () => {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="p-5 lg:p-8 fixed z-10 left-0 w-full top-0"
+      className="p-5 lg:p-8 fixed z-50 left-0 w-full  top-0"
     >
       <motion.nav
         initial="closed"
@@ -173,38 +179,53 @@ const Navbar = () => {
             Close
           </motion.button>
 
-          <div className="flex w-full lg:flex-row justify-between flex-col-reverse lg:ml-10 h-5/6 lg:items-center">
+          <div className="flex w-full lg:flex-row justify-between flex-col-reverse lg:ml-10 h-5/6 lg:items-center ">
             <motion.ul
               className="px-5 lg:self-end flex lg:flex-col gap-4"
               variants={liVariant}
             >
-              <Link href="/">
-                <FaFacebook color={"rgb(82 82 91)"} size={28} />
+              <Link href="https://www.facebook.com/profile.php?id=61550785031884&mibextid=ZbWKwL">
+                <FaFacebook
+                  color={"rgb(82 82 91)"}
+                  className="text-3xl lg:text-4xl"
+                />
               </Link>
-              <Link href="/">
+              {/* <Link href="/">
                 <FaInstagram color={"rgb(82 82 91)"} size={28} />
+              </Link> */}
+              <Link href="https://discord.gg/7H7VBWY6vf">
+                <FaDiscord
+                  color={"rgb(82 82 91)"}
+                  className="text-3xl lg:text-4xl"
+                />
               </Link>
-              <Link href="/">
-                <FaDiscord color={"rgb(82 82 91)"} size={28} />
-              </Link>
-              <Link href="/">
-                <FaTelegram color={"rgb(82 82 91)"} size={28} />
+              <Link href="https://t.me/+pnU0fIZ6MV5iODE9">
+                <FaTelegram
+                  color={"rgb(82 82 91)"}
+                  className="text-3xl lg:text-4xl"
+                />
               </Link>
             </motion.ul>
             <motion.ul variants={ulVariant} className="list-none px-6 w-full ">
               {MOBILE_NAV_ITEMS.map((navItem) => (
-                <motion.li
-                  whileTap={{ scale: 0.95 }}
+                <Link
+                  href={navItem.to}
+                  onClick={() => setMobileNavOpen(false)}
+                  prefetch={true}
                   key={navItem.id}
-                  className="my-5 text-zinc-600 transition ease-in-out font-semibold opacity-40 hover:opacity-100 font-monos overflow-hidden select-none cursor-pointer"
                 >
-                  <motion.div
-                    variants={liVariant}
-                    className="text-left  text-5xl lg:text-7xl"
+                  <motion.li
+                    whileTap={{ scale: 0.95 }}
+                    className="my-5 text-zinc-600 transition ease-in-out font-semibold opacity-40 hover:opacity-100 font-monos overflow-hidden select-none cursor-pointer"
                   >
-                    {navItem.navTitle}
-                  </motion.div>
-                </motion.li>
+                    <motion.div
+                      variants={liVariant}
+                      className="text-left  text-5xl lg:text-7xl"
+                    >
+                      {navItem.navTitle}
+                    </motion.div>
+                  </motion.li>
+                </Link>
               ))}
             </motion.ul>
             <div className="w-1 h-8"></div>

@@ -8,7 +8,9 @@ type Props = {
 
 const Layout = ({ children, className }: Props) => {
   return (
-    <main className={cn("container mx-auto ", className)}>{children}</main>
+    <section className={cn("container mx-auto ", className)}>
+      {children}
+    </section>
   );
 };
 

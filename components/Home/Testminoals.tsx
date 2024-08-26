@@ -5,7 +5,7 @@ import { CardStack } from "../ui/card-stack";
 import { cn } from "@/lib/utils";
 export function Testmonials() {
   return (
-    <Layout className=" flex flex-col gap-10 my-16 md:my-28  md:items-center items-start  w-full">
+    <Layout className=" flex flex-col gap-10 pt-16 md:pt-28  md:items-center items-start  w-full">
       <HeadingText>Testimonials</HeadingText>
       <CardStack items={CARDS} />
     </Layout>
@@ -35,39 +35,72 @@ export const Highlight = ({
 const CARDS = [
   {
     id: 0,
-    name: "Manu Arora",
-    designation: "Senior Software Engineer",
+    name: "Chaw",
+    designation: "Counselee",
     content: (
       <p>
-        These cards are amazing, <Highlight>I want to use them</Highlight> in my
-        project. Framer motion is a godsend ngl tbh fam 🙏
+        The counsellor was really kind, friendly, and gave a really{" "}
+        <Highlight>detailed feedback</Highlight> on my writings. She also gave
+        useful tips and explained very well about the thing I have been
+        struggling with. Thanks a lot to all the members of The Hive, and
+        especially ama Lilith, for making an urgent counselling session as well
+        just because my finals is getting closer. Keep up the good work
+        smarties!!
       </p>
     ),
   },
   {
     id: 1,
-    name: "Elon Musk",
-    designation: "Senior Shitposter",
+    name: "Thet Zun Oo (IGCSE May/June 2024) ",
+    designation: "Revision Class Student",
     content: (
       <p>
-        I dont like this Twitter thing,{" "}
-        <Highlight>deleting it right away</Highlight> because yolo. Instead, I
-        would like to call it <Highlight>X.com</Highlight> so that it can easily
-        be confused with adult sites.
+        First of all, I am very greatful for Hive with these amazing free
+        revision classes. It is very helpful to me to improve my math grades and
+        the understanding. In addition, the teacher is patient and her
+        <Highlight> explaination is clear.</Highlight> Lastly, I love the fact
+        that the revision classes covered all topics and help us to practice
+        past papers too.
       </p>
     ),
   },
   {
     id: 2,
-    name: "Tyler Durden",
-    designation: "Manager Project Mayhem",
+    name: "May Thu Kha (IGCSE Oct/Nov 2024)",
+    designation: "Revision Class Student",
     content: (
       <p>
-        The first rule of
-        <Highlight>Fight Club</Highlight> is that you do not talk about fight
-        club. The second rule of
-        <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
-        club.
+        Teachers were very nice and flexible too. They are very friendly and
+        make sure everyone understands the concept,{" "}
+        <Highlight>
+          explains again and again without being frustrated.
+        </Highlight>{" "}
+        I am very grateful for The Hive for the free class. They are my exam
+        saver ^^.
+      </p>
+    ),
+  },
+  {
+    id: 3,
+    name: "May Yoon Nadi Kyaw",
+    designation: "Counselee",
+    content: (
+      <p>
+        It is effective as<Highlight>details feedback</Highlight> are given as
+        well as the suggestions to improve the writings.
+      </p>
+    ),
+  },
+  {
+    id: 4,
+    name: "Su Pyae Pyae Zaw (IGCSE May/June 2024)",
+    designation: "Revision Class Student",
+    content: (
+      <p>
+        I got a lot of practices from your class and it was really helpful for
+        me! You could cover all of things{" "}
+        <Highlight>needed to know for exam</Highlight> and I really appreciated
+        for your time, effort and goodwill towards us. Thank you again!
       </p>
     ),
   },
