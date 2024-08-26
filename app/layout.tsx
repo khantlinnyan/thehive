@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     "Growth and Inspiration for Youth",
   ],
   icons: {
-    icon: "'@/app/favicon.ico'",
-    shortcut: "'@/app/favicon-16x16.png",
-    apple: "'@/app/apple-touch-icon.png",
+    icon: "./icon.ico",
+    shortcut: "./favicon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
   title: {
     default: "TheHive",
