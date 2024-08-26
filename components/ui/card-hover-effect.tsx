@@ -16,6 +16,9 @@ export const HoverEffect = ({
   items: {
     name: string;
     position: string;
+    department: string;
+    img: string;
+    socialLinks: { [key: string]: string };
     // link: string;
   }[];
   className?: string;

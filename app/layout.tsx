@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import AnimatedLayout from "@/components/animation/AnimatedLayout";
 import Footer from "@/components/common/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -54,6 +55,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </AnimatedLayout>
+        <Analytics />
       </body>
     </html>
   );

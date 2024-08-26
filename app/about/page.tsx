@@ -29,7 +29,12 @@ export const metadata: Metadata = {
 };
 
 const words = ["The Hive", "worker bees", "youth"];
-const page = (props: Props) => {
+const page = async (props: Props) => {
+  const response = await fetch("https://the-hive-b.vercel.app/members", {
+    next: { revalidate: 3600 },
+  });
+  const data = await response.json();
+
   return (
     <main className="">
       <section className="lg:h-screen container mt-60 mb-28 lg:mt-0 lg:mb-0  max-w-7xl mx-auto justify-center items-center bg-wite flex">
@@ -61,7 +66,7 @@ const page = (props: Props) => {
         </section>
         <section>
           <HeadingText className="lg:text-5xl">Our worker bees</HeadingText>
-          <HoverEffect items={people} />
+          <HoverEffect items={data} />
         </section>
       </Layout>
     </main>
