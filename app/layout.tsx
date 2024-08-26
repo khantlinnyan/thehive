@@ -30,6 +30,11 @@ export const metadata: Metadata = {
     "Supportive Youth Community",
     "Growth and Inspiration for Youth",
   ],
+  icons: {
+    icon: "'@/app/favicon.ico'",
+    shortcut: "'@/app/favicon-16x16.png",
+    apple: "'@/app/apple-touch-icon.png",
+  },
   title: {
     default: "TheHive",
     template: "%s | TheHive",
