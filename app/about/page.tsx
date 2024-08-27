@@ -1,3 +1,4 @@
+import MemberCard from "@/components/About/MemberCard";
 import FadeInComponent from "@/components/animation/FadeInComponent";
 import HeadingText from "@/components/common/HeadingText";
 import Text from "@/components/common/Text";
@@ -23,7 +24,7 @@ const people = [
 ];
 
 export const metadata: Metadata = {
-  title: "About-us",
+  title: "About",
   description:
     "The Hive is a youth-driven non-profit organization in Myanmar dedicated to empowering individuals through education and personal growth. We provide a safe and inclusive community where young people can connect, inspire each other, and showcase their talents. Our mission focuses on offering valuable educational resources, promoting personal development, and creating opportunities for youth to thrive. Join us in building a supportive environment that fosters dreams, connections, and growth.",
 };
@@ -66,7 +67,14 @@ const page = async (props: Props) => {
         </section>
         <section>
           <HeadingText className="lg:text-5xl">Our worker bees</HeadingText>
-          <HoverEffect items={data} />
+          <section className="hidden lg:block">
+            <HoverEffect items={data} />
+          </section>
+          <section className="grid grid-cols-2 gap-x-4 gap-y-8 py-10  lg:hidden">
+            {data?.map((item: any) => (
+              <MemberCard {...item} key={item?._id} />
+            ))}
+          </section>
         </section>
       </Layout>
     </main>

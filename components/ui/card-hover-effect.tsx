@@ -28,14 +28,14 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-2 gap-x-3 gap-y-6 lg:gap-x-0 lg:gap-y-0  lg:grid-cols-4  py-10",
+        "grid grid-cols-2 gap-x-4 gap-y-8  lg:gap-0  lg:grid-cols-4  py-10",
         className
       )}
     >
       {items.map((item, idx) => (
         <div
           key={item?.name}
-          className="relative group  block p-0 md:p-2 h-full w-full"
+          className="relative group  block p-0 md:p-6 h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
