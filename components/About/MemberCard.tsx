@@ -52,6 +52,8 @@ const MemberCard = (props: Props) => {
               <p className="text-[10px] md:text-base text-white font-inter">
                 {position === "Founding member"
                   ? "Founding member"
+                  : name === "Phyu Thant Kyi"
+                  ? "Founding member"
                   : position === "Head"
                   ? `Head of ${department}`
                   : position === "Member"
