@@ -151,12 +151,14 @@ const Navbar = () => {
         className="flex justify-between items-center mx-3 lg:mx-10 "
       >
         <div className="overflow-hidden bg-transparent ">
-          <motion.h1
-            variants={hideNavItemsVariant}
-            className=" font-monos text-primary-bee-black tracking-tight font-bold text-base lg:text-2xl"
-          >
-            The Hive
-          </motion.h1>
+          <Link href={"/"} scroll={true}>
+            <motion.h1
+              variants={hideNavItemsVariant}
+              className=" font-monos text-primary-bee-black tracking-tight font-bold text-base lg:text-2xl"
+            >
+              The Hive
+            </motion.h1>
+          </Link>
         </div>
         <div className="overflow-hidden">
           <motion.div
