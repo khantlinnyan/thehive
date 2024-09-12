@@ -33,7 +33,7 @@ const MemberCard = (props: Props) => {
                 <div className="absolute inset-x-0 h-1/2 bottom-0 z-20 bg-gradient-to-t from-zinc-800 to-transparent"></div>
                 <Image
                   src={img}
-                  className="object-cover aspect-[12/13] "
+                  className="object-cover w-full aspect-[12/13] "
                   alt={`${name}'s photo`}
                   width={300}
                   height={300}
