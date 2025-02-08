@@ -58,7 +58,7 @@ export default function RootLayout({
         <AnimatedLayout>
           <Navbar />
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </AnimatedLayout>
         <Analytics />
       </body>
