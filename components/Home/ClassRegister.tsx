@@ -9,6 +9,10 @@ import {
   CardTitle,
 } from "../ui/card";
 import Link from "next/link";
+import GradientText from "../ui/gradient-text";
+import ShinyText from "../ui/shiny-text";
+import { ArrowRight } from "lucide-react";
+import ScrollVelocity from "../ui/scroll-velocity";
 
 const ClassRegister = () => {
   return (
@@ -25,12 +29,13 @@ const ClassRegister = () => {
 
           <Button
             color="link"
-            className="mt-4 bg-primary-honey-yellow text-zinc-800 font-semibold text-base lg:text-lg"
+            className="mt-4 hover:translate-x-1 transition duration-500 gap-2 bg-primary-honey-yellow text-zinc-800 font-semibold text-base lg:text-lg"
             size="lg"
           >
-            <Link href="https://forms.gle/KT1ZtdpXr8MtM7Lh6">
+            <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfvRL-ODBnCffpmCg94Kr8OEXI9J2R-RWmn9sul74fSlZDX_A/viewform?usp=preview">
               Register now!
             </Link>
+            <ArrowRight className="hover:translate-x-1 transition duration-500" />
           </Button>
         </CardContent>
       </Card>

@@ -8,6 +8,8 @@ import Achieved from "@/components/Home/Achieved";
 import { EventCard } from "@/components/common/EventCard";
 import { ClassSection } from "@/components/Home/ClassSection";
 import ClassRegister from "@/components/Home/ClassRegister";
+import TestSection from "@/components/common/TestSection";
+import ScrollVelocity from "@/components/ui/scroll-velocity";
 
 const P = ({ text }: { text: string }) => (
   <p className="text-4xl ml-10 text-primary-bee-black font-monos leading-snug tracking-tight font-medium w-5/6 mb-12">
@@ -19,8 +21,17 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <div className="my-20 lg:my-40">
+        <ScrollVelocity
+          texts={["The Hive", "IGCSE", "revision classes"]}
+          className="text-accent-bright-orange"
+          damping={90}
+          numCopies={8}
+        />
+      </div>
       <ClassRegister />
 
+      {/* <TestSection /> */}
       <ClassSection />
       <Achieved />
       <AboutSection />
