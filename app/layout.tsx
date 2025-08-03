@@ -5,6 +5,7 @@ import Navbar from "@/components/common/Navbar";
 import AnimatedLayout from "@/components/animation/AnimatedLayout";
 import Footer from "@/components/common/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import { ToastContainer } from "react-toastify";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -61,6 +62,7 @@ export default function RootLayout({
           {/* <Footer /> */}
         </AnimatedLayout>
         <Analytics />
+        <ToastContainer />
       </body>
     </html>
   );

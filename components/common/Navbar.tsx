@@ -29,6 +29,11 @@ const MOBILE_NAV_ITEMS = [
     navTitle: "classes.",
     to: "/classes",
   },
+  {
+    id: 4,
+    navTitle: "attendance.",
+    to: "/attendance",
+  },
 ];
 
 const Navbar = () => {
@@ -46,7 +51,7 @@ const Navbar = () => {
       }
     }
   });
-  console.log(hidden);
+  hidden;
 
   const hideNavItemsVariant = {
     opened: {
