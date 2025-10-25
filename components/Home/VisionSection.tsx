@@ -30,10 +30,10 @@ const VisionSection = (props: Props) => {
 
         <div className="flex flex-col justify-center font-monos items-center">
           <Text className="text-base text-zinc-900 font-semibold lg:text-lg">
-            Phyu That Kyi
+            Phyu Thant Kyi
           </Text>
           <Text className="text-sm lg:text-base">
-            Creative Director @ The Hive
+            Co-founder @ The Hive
           </Text>
         </div>
       </Layout>
